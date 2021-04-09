@@ -17,6 +17,11 @@ try:
 except Exception as e:
     print(e)
     exit(1)
+
+if len(im.getpixel((0,0))[:-1]) < 3:
+    print('invalid png data')
+    exit(1)
+
 for x in range(im.height):
     for y in range(im.width):
         color_map.append("#%02x%02x%02x" % im.getpixel((y, x))[:-1])
