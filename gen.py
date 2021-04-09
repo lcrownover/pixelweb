@@ -3,7 +3,6 @@
 from typing import List
 import math
 from PIL import Image
-import numpy as np
 import sys
 
 if len(sys.argv) < 1:
