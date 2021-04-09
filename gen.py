@@ -25,7 +25,7 @@ for x in range(im.height):
 
 def gen_cols_rows(num_pixels):
     elems = int(math.sqrt(num_pixels))
-    n = int(100 // math.sqrt(num_pixels))
+    n = 100 / math.sqrt(num_pixels)
     return f"{n}% " * elems
 
 
